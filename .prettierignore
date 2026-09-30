@@ -1,0 +1,8 @@
+.next
+.sites-runtime
+.wrangler
+dist
+node_modules
+pnpm-lock.yaml
+components/ui
+vendor

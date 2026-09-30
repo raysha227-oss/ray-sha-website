@@ -1,0 +1,545 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-25",
+  "sourceBoundary": "Supplied website brief, staged build plan, and documents in Allowed info. Source availability does not imply public permission.",
+  "entries": [
+    {
+      "id": "feature-kirigami-environmental-robot",
+      "type": "feature",
+      "workingTitle": "One sheet of paper, several versions",
+      "slug": "kirigami-environmental-robot",
+      "visibility": "candidate",
+      "factState": "partially-verified",
+      "status": "fact-check",
+      "date": { "value": "2024-05/2026", "precision": "range" },
+      "tags": ["make", "test", "move"],
+      "evidence": [
+        "origin in paper folding",
+        "pneumatic locomotion",
+        "camera and environmental-sensor directions",
+        "multiple competition contexts"
+      ],
+      "missing": [
+        "exact iteration count",
+        "cleared photographs",
+        "one failed version",
+        "mechanism description suitable for public release",
+        "official award names and levels"
+      ],
+      "privacy": [
+        "review competition and institution naming",
+        "review technical details and collaborator credits"
+      ]
+    },
+    {
+      "id": "feature-pesticide-field-research",
+      "type": "feature",
+      "workingTitle": "After the spray",
+      "slug": "pesticide-field-research",
+      "visibility": "candidate",
+      "factState": "partially-verified",
+      "status": "permission-review",
+      "date": { "value": "2025-10/2026-08", "precision": "range" },
+      "tags": ["question", "trace", "test"],
+      "evidence": [
+        "UAV-applied fungicide field sampling",
+        "air, crop, soil, and mulch residue analysis",
+        "farmer interviews",
+        "manuscript described as under review"
+      ],
+      "missing": [
+        "exact research question",
+        "fungicide identity and safe public detail",
+        "controls and limitations",
+        "cleared graph",
+        "cleared field photographs",
+        "current manuscript status"
+      ],
+      "privacy": [
+        "coauthor and institution clearance",
+        "journal prepublication restrictions",
+        "interview-participant privacy",
+        "precise field locations"
+      ]
+    },
+    {
+      "id": "feature-environmental-discounting",
+      "type": "feature",
+      "workingTitle": "Environmental Discounting and Climate Economics",
+      "slug": "environmental-discounting",
+      "visibility": "candidate",
+      "factState": "partially-verified",
+      "status": "fact-check",
+      "date": { "value": "2026-01/2026-06", "precision": "range" },
+      "tags": ["question", "trace", "argue"],
+      "evidence": [
+        "essay comparing Ramsey-framework assumptions and Nordhaus, Stern, and Weitzman approaches",
+        "argument for low and declining long-term rates"
+      ],
+      "missing": [
+        "exact research question",
+        "current argument approved in Ray's voice",
+        "cleared figure",
+        "short excerpt",
+        "competition result verification",
+        "download permission"
+      ],
+      "privacy": [
+        "label WORKING PAPER",
+        "do not imply publication or settled expertise"
+      ]
+    },
+    {
+      "id": "collection-chinese-painting",
+      "type": "collection",
+      "workingTitle": "Chinese painting",
+      "slug": "chinese-painting",
+      "visibility": "candidate",
+      "factState": "partially-verified",
+      "status": "draft",
+      "date": { "value": "seven years", "precision": "approximate" },
+      "tags": ["notice", "shape"],
+      "evidence": [
+        "landscape and flower-and-bird painting",
+        "long-running practice",
+        "Level 10 claim in source"
+      ],
+      "missing": [
+        "painting titles or subjects",
+        "medium",
+        "year",
+        "cleared scans",
+        "teacher or tradition when relevant",
+        "brief genuine observations"
+      ],
+      "privacy": [
+        "verify whether level/recognition belongs in public presentation",
+        "confirm image ownership"
+      ]
+    },
+    {
+      "id": "collection-said-out-loud",
+      "type": "collection",
+      "workingTitle": "Said Out Loud",
+      "slug": "said-out-loud",
+      "visibility": "candidate",
+      "factState": "partially-verified",
+      "status": "fact-check",
+      "date": { "value": "2023/2026", "precision": "range" },
+      "tags": ["shape", "argue", "gather"],
+      "evidence": [
+        "MUN",
+        "British Parliamentary debate",
+        "mock trial",
+        "hosting",
+        "speeches and water-monitoring keynote"
+      ],
+      "missing": [
+        "one cleared speech excerpt",
+        "one remembered motion or argument",
+        "one hosting artifact",
+        "event organizer and keynote context",
+        "current official recognition names"
+      ],
+      "privacy": [
+        "audience and participant consent",
+        "avoid third-party names and private notes without permission"
+      ]
+    },
+    {
+      "id": "feature-asb-systems",
+      "type": "feature",
+      "workingTitle": "Making the handoff visible",
+      "slug": "asb-systems",
+      "visibility": "candidate",
+      "factState": "partially-verified",
+      "status": "fact-check",
+      "date": { "value": "grades-10-12", "precision": "range" },
+      "tags": ["gather", "shape", "argue"],
+      "evidence": [
+        "event planning and review",
+        "shared spreadsheet management system",
+        "delegation and documentation",
+        "student request and constraint management"
+      ],
+      "missing": [
+        "verified role dates",
+        "one policy or event story",
+        "cleared planning artifact",
+        "one specific disagreement or tradeoff",
+        "school naming decision"
+      ],
+      "privacy": [
+        "student and staff identities",
+        "internal documents",
+        "school operational details"
+      ]
+    },
+    {
+      "id": "feature-environmental-club",
+      "type": "feature",
+      "workingTitle": "Measure first",
+      "slug": "environmental-club-fieldwork",
+      "visibility": "candidate",
+      "factState": "partially-verified",
+      "status": "fact-check",
+      "date": { "value": "2024-10/2026-07", "precision": "range" },
+      "tags": ["gather", "measure", "test"],
+      "evidence": [
+        "water-quality testing",
+        "drone-assisted inspection",
+        "energy audits",
+        "team-based repeatable procedures"
+      ],
+      "missing": [
+        "official club name",
+        "verified counts",
+        "cleared maps and photographs",
+        "one failed activity",
+        "presentation audience and outcomes"
+      ],
+      "privacy": [
+        "school and site locations",
+        "club-member identities",
+        "data and map sensitivity"
+      ]
+    },
+    {
+      "id": "feature-yygs-community",
+      "type": "feature",
+      "workingTitle": "What continued afterward",
+      "slug": "yygs-and-community",
+      "visibility": "candidate",
+      "factState": "conflicted",
+      "status": "fact-check",
+      "date": { "value": "2025-07/current", "precision": "range" },
+      "tags": ["gather", "question", "shape"],
+      "evidence": [
+        "YYGS capstone on microplastic degradation",
+        "capstone leadership",
+        "post-program chapter leadership and environmental advocacy"
+      ],
+      "missing": [
+        "official organization name",
+        "exact role titles",
+        "capstone proposal detail safe to publish",
+        "team interaction",
+        "verified membership and activity claims"
+      ],
+      "privacy": [
+        "team names and conversations",
+        "organization permission",
+        "avoid making institutional brand the story"
+      ]
+    },
+    {
+      "id": "feature-mobile-sensing",
+      "type": "feature",
+      "workingTitle": "A reading is not an explanation",
+      "slug": "mobile-environmental-sensing",
+      "visibility": "candidate",
+      "factState": "partially-verified",
+      "status": "draft",
+      "date": { "value": "2026-06/current", "precision": "range" },
+      "tags": ["measure", "move", "question"],
+      "evidence": [
+        "sensor array concept with pollution sensors, GPS, and imaging",
+        "moving-condition data collection",
+        "QGIS and machine-learning exploration"
+      ],
+      "missing": [
+        "current working state",
+        "sensor list safe to disclose",
+        "validation results",
+        "sample data",
+        "distinction between aspiration and demonstrated capability"
+      ],
+      "privacy": [
+        "location traces",
+        "unvalidated health/environmental inference",
+        "avoid claiming pesticide identification without evidence"
+      ]
+    },
+    {
+      "id": "collection-photography",
+      "type": "collection",
+      "workingTitle": "Frames I almost deleted",
+      "slug": "photography",
+      "visibility": "candidate",
+      "factState": "unverified",
+      "status": "seed",
+      "date": { "value": null, "precision": "unknown" },
+      "tags": ["notice", "frame", "move"],
+      "evidence": [
+        "drone photography",
+        "school TV",
+        "ordinary and experimental photography named in brief"
+      ],
+      "missing": [
+        "original files",
+        "dates",
+        "captions",
+        "creator rights",
+        "subject consent",
+        "camera metadata only when known"
+      ],
+      "privacy": ["faces", "school locations", "GPS and device metadata"]
+    },
+    {
+      "id": "object-raspberry-pi-camera",
+      "type": "object",
+      "workingTitle": "There were easier ways to take a picture",
+      "slug": "raspberry-pi-camera",
+      "visibility": "candidate",
+      "factState": "unverified",
+      "status": "seed",
+      "date": { "value": null, "precision": "unknown" },
+      "tags": ["make", "test", "notice"],
+      "evidence": ["Raspberry Pi photography named in brief"],
+      "missing": [
+        "exact function",
+        "device photographs",
+        "code excerpt if useful",
+        "first failed image",
+        "reason for building it"
+      ],
+      "privacy": [
+        "remove credentials, network details, and embedded location metadata"
+      ]
+    },
+    {
+      "id": "collection-notes",
+      "type": "collection",
+      "workingTitle": "Notes",
+      "slug": "notes",
+      "visibility": "candidate",
+      "factState": "unverified",
+      "status": "seed",
+      "date": { "value": null, "precision": "unknown" },
+      "tags": [],
+      "evidence": ["required by website brief"],
+      "missing": ["real note texts", "images", "dates", "source context"],
+      "privacy": [
+        "notes default private until individually approved",
+        "do not publish diary-like material by implication"
+      ]
+    },
+    {
+      "id": "listing-erhu",
+      "type": "listing",
+      "workingTitle": "Erhu",
+      "slug": "erhu",
+      "visibility": "candidate",
+      "factState": "unverified",
+      "status": "seed",
+      "date": { "value": null, "precision": "unknown" },
+      "tags": ["play", "listen"],
+      "evidence": ["interest named in brief"],
+      "missing": [
+        "one piece",
+        "one observation",
+        "cleared photograph",
+        "audio rights if used"
+      ],
+      "privacy": []
+    },
+    {
+      "id": "listing-tennis",
+      "type": "listing",
+      "workingTitle": "Tennis",
+      "slug": "tennis",
+      "visibility": "candidate",
+      "factState": "unverified",
+      "status": "seed",
+      "date": { "value": null, "precision": "unknown" },
+      "tags": ["move", "play"],
+      "evidence": ["recreational interest named in brief"],
+      "missing": ["one ordinary true detail", "optional photograph"],
+      "privacy": ["do not identify routine time or location"]
+    },
+    {
+      "id": "note-cycling",
+      "type": "note",
+      "workingTitle": "From the side of the road",
+      "slug": "cycling",
+      "visibility": "candidate",
+      "factState": "unverified",
+      "status": "seed",
+      "date": { "value": null, "precision": "unknown" },
+      "tags": ["move", "notice"],
+      "evidence": ["recreational interest named in brief"],
+      "missing": [
+        "one safe generalized route context",
+        "one real observation",
+        "cleared photograph"
+      ],
+      "privacy": [
+        "never publish routine route, home proximity, or precise location by default"
+      ]
+    },
+    {
+      "id": "listing-math-club",
+      "type": "listing",
+      "workingTitle": "Math club",
+      "slug": "math-club",
+      "visibility": "candidate",
+      "factState": "partially-verified",
+      "status": "seed",
+      "date": { "value": "grade-9", "precision": "approximate" },
+      "tags": ["question", "play"],
+      "evidence": ["activity named in supplied brief"],
+      "missing": [
+        "one actual problem or scratched-out solution",
+        "whether this merits public inclusion"
+      ],
+      "privacy": []
+    },
+    {
+      "id": "feature-ap-seminar-microplastics",
+      "type": "feature",
+      "workingTitle": "Microplastics in the wash",
+      "slug": "microplastics-washer-filtration",
+      "visibility": "candidate",
+      "factState": "partially-verified",
+      "status": "seed",
+      "date": { "value": "2025-09/2026-05", "precision": "range" },
+      "tags": ["trace", "compare", "question"],
+      "evidence": [
+        "AP Seminar research on washing-machine filtration and technical viability"
+      ],
+      "missing": [
+        "exact research question",
+        "paper title",
+        "sources and findings",
+        "Ray's own contribution",
+        "permission to excerpt class work"
+      ],
+      "privacy": [
+        "school/course context optional",
+        "review teacher and peer material"
+      ]
+    },
+    {
+      "id": "feature-ap-seminar-third-places",
+      "type": "feature",
+      "workingTitle": "Where people go when home and work are not enough",
+      "slug": "third-places",
+      "visibility": "candidate",
+      "factState": "partially-verified",
+      "status": "seed",
+      "date": { "value": "2025-09/2026-05", "precision": "range" },
+      "tags": ["question", "gather", "argue"],
+      "evidence": [
+        "AP Seminar written argument on the decline of third places"
+      ],
+      "missing": [
+        "exact claim",
+        "scope and geography",
+        "sources",
+        "final status",
+        "whether this belongs in the first release"
+      ],
+      "privacy": ["review class feedback and collaborator material"]
+    },
+    {
+      "id": "collection-pesticide-side-questions",
+      "type": "collection",
+      "workingTitle": "Questions that escaped the main project",
+      "slug": "pesticide-side-questions",
+      "visibility": "candidate",
+      "factState": "unverified",
+      "status": "seed",
+      "date": { "value": "2025/2026", "precision": "range" },
+      "tags": ["question", "trace", "fail"],
+      "evidence": [
+        "pesticide-related side research requested in website brief"
+      ],
+      "missing": [
+        "actual side questions",
+        "which led nowhere",
+        "notes or evidence safe to show",
+        "relationship to the main manuscript"
+      ],
+      "privacy": [
+        "do not expose unpublished group research or participant data"
+      ]
+    },
+    {
+      "id": "document-pesticide-manuscript",
+      "type": "document",
+      "workingTitle": "Pesticide research manuscript",
+      "slug": "pesticide-research-manuscript",
+      "visibility": "private",
+      "factState": "partially-verified",
+      "status": "permission-review",
+      "date": { "value": "2026", "precision": "year" },
+      "tags": ["trace", "measure"],
+      "evidence": [
+        "source describes second authorship and review at the Journal of Agricultural and Food Chemistry"
+      ],
+      "missing": [
+        "official title",
+        "current author list",
+        "current journal status",
+        "accepted public version",
+        "coauthor and institution approval"
+      ],
+      "privacy": [
+        "no download by default",
+        "publisher and preprint policy",
+        "hidden metadata and comments",
+        "field and interview data"
+      ]
+    },
+    {
+      "id": "document-environmental-discounting-paper",
+      "type": "document",
+      "workingTitle": "Environmental Discounting and Climate Economics",
+      "slug": "environmental-discounting-paper",
+      "visibility": "candidate",
+      "factState": "partially-verified",
+      "status": "fact-check",
+      "date": { "value": "2026", "precision": "year" },
+      "tags": ["question", "argue"],
+      "evidence": ["essay on long-term discount rates and climate economics"],
+      "missing": [
+        "final title",
+        "approved version",
+        "competition status",
+        "permission to download",
+        "accessible public copy"
+      ],
+      "privacy": [
+        "label WORKING PAPER unless publication status changes",
+        "remove comments, revision history, and personal metadata"
+      ]
+    },
+    {
+      "id": "document-environmental-club-reports",
+      "type": "document",
+      "workingTitle": "Environmental club field reports",
+      "slug": "environmental-club-reports",
+      "visibility": "private",
+      "factState": "partially-verified",
+      "status": "permission-review",
+      "date": { "value": "2024/2026", "precision": "range" },
+      "tags": ["measure", "gather"],
+      "evidence": [
+        "water-quality and energy-audit reports described in supplied sources"
+      ],
+      "missing": [
+        "report inventory",
+        "authors",
+        "approved excerpts",
+        "data validation",
+        "school and club permission"
+      ],
+      "privacy": [
+        "locations and school operations",
+        "student names",
+        "raw environmental data",
+        "document metadata"
+      ]
+    }
+  ]
+}
