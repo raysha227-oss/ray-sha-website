@@ -1,3 +1,6 @@
+import { galleries, galleryBySource } from "@/content/galleries";
+import { PhotoSlider } from "./photo-slider";
+
 type EditorialFigureProps = {
   src: string;
   alt: string;
@@ -17,6 +20,18 @@ export function EditorialFigure({
   className = "",
   priority = false,
 }: EditorialFigureProps) {
+  const galleryKey = galleryBySource[src];
+  const photos = galleryKey
+    ? [...galleries[galleryKey]].sort(
+        (a, b) => Number(b.src === src) - Number(a.src === src),
+      )
+    : [];
+  if (galleryKey)
+    return (
+      <div className={`editorial-figure editorial-gallery ${className}`.trim()}>
+        <PhotoSlider photos={photos} label={caption} />
+      </div>
+    );
   return (
     <figure className={`editorial-figure ${className}`.trim()}>
       <div className="figure-frame">

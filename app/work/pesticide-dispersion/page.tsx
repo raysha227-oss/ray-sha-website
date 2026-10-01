@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import {
   Annotation,
   DocumentRow,
   EditorialFigure,
 } from "@/components/editorial";
 import { SiteHeader } from "@/components/layout/site-header";
+import { PhotoSlider } from "@/components/editorial/photo-slider";
+import { galleries } from "@/content/galleries";
 
 export const metadata: Metadata = {
   title: "Pesticide dispersion fieldwork",
@@ -23,7 +24,7 @@ const samplePath = [
 export default function PesticidePage() {
   return (
     <div className="site-shell">
-      <SiteHeader />
+      <SiteHeader active="Work" />
       <main id="main-content" tabIndex={-1}>
         <header className="project-hero project-hero-dark">
           <p className="eyebrow">Field research / from October 2025</p>
@@ -103,6 +104,29 @@ export default function PesticidePage() {
         </section>
 
         <section
+          id="mobile-sensing"
+          className="work-collection-entry"
+          aria-labelledby="mobile-title"
+        >
+          <PhotoSlider
+            label="Mobile sensing"
+            photos={galleries.sensors}
+            variant="window"
+          />
+          <div>
+            <p className="section-label">The next build</p>
+            <h2 id="mobile-title">Collecting data while moving.</h2>
+            <p>
+              I’m developing a sensor array that combines pollution sensors,
+              GPS, and imaging. The aim is to collect spatial data in moving
+              conditions and explore whether machine learning can help interpret
+              it. It’s ongoing work; the laboratory measurements remain the
+              reference.
+            </p>
+          </div>
+        </section>
+
+        <section
           id="research-note"
           className="research-record"
           aria-labelledby="record-title"
@@ -125,7 +149,7 @@ export default function PesticidePage() {
         <footer className="site-footer">
           <p>Ray Sha</p>
           <p>Field measurements are the beginning of the explanation.</p>
-          <Link href="/notes">Notes and questions</Link>
+          <a href="/notes">Notes and questions</a>
         </footer>
       </main>
     </div>

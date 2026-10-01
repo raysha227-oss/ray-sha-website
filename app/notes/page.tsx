@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { SiteHeader } from "@/components/layout/site-header";
 
 export const metadata: Metadata = {
@@ -38,7 +37,7 @@ const notes = [
 export default function NotesPage() {
   return (
     <div className="site-shell">
-      <SiteHeader />
+      <SiteHeader active="Notes" />
       <main id="main-content" tabIndex={-1}>
         <header className="notes-hero">
           <p className="eyebrow">Notes / fragments worth keeping</p>
@@ -84,7 +83,7 @@ export default function NotesPage() {
         <footer className="site-footer">
           <p>Ray Sha</p>
           <p>Short notes, unfinished on purpose.</p>
-          <Link href="/">Return home</Link>
+          <a href="/">Return home</a>
         </footer>
       </main>
     </div>

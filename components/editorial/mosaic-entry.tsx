@@ -1,5 +1,6 @@
 import { TagList } from "./tag-list";
 import { PhotoSlider, type GalleryPhoto } from "./photo-slider";
+import { galleries, galleryByLabel } from "@/content/galleries";
 
 export type MosaicEntrySize = "small" | "standard" | "wide" | "tall";
 
@@ -37,13 +38,23 @@ export function MosaicEntry({
   recognition,
   id,
 }: MosaicEntryProps) {
+  const galleryKey = galleryByLabel[label];
+  const galleryPhotos = galleryKey ? galleries[galleryKey] : photos;
   return (
     <article
       id={id}
-      className={`mosaic-entry mosaic-entry-${size}${image || photos?.length ? " has-image" : ""}`}
+      className={`mosaic-entry mosaic-entry-${size}${image || galleryPhotos?.length ? " has-image" : ""}`}
     >
-      {photos?.length ? (
-        <PhotoSlider photos={photos} label={label} />
+      {galleryPhotos?.length ? (
+        <PhotoSlider
+          photos={galleryPhotos}
+          label={label}
+          variant={
+            ["Cycling", "Cooking", "Cameras"].includes(label)
+              ? "window"
+              : "slider"
+          }
+        />
       ) : image ? (
         <figure className="mosaic-figure">
           <div className="mosaic-image-frame">

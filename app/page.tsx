@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { EditorialFigure } from "@/components/editorial";
 import { SiteHeader } from "@/components/layout/site-header";
 
@@ -40,9 +39,9 @@ export default function Home() {
                 environmental sensors. Each version gave me something else to
                 work out.
               </p>
-              <Link className="text-link" href="/work/kirigami">
+              <a className="text-link" href="/work/kirigami">
                 Open the build notes
-              </Link>
+              </a>
             </div>
           </article>
 
@@ -55,12 +54,12 @@ export default function Home() {
                 go. We sampled air, crops, soil, and mulch, then followed how
                 the residues changed over time.
               </p>
-              <Link
+              <a
                 className="text-link text-link-light"
                 href="/work/pesticide-dispersion"
               >
                 Follow the sampling path
-              </Link>
+              </a>
             </div>
             <EditorialFigure
               src="/media/field-monitor.jpg"
@@ -105,9 +104,9 @@ export default function Home() {
                   share?
                 </h3>
               </article>
-              <Link className="text-link" href="/notes">
+              <a className="text-link" href="/notes">
                 Read the conversation notes
-              </Link>
+              </a>
             </div>
           </section>
 
@@ -127,9 +126,9 @@ export default function Home() {
                 idle equipment across twenty classrooms and two buildings. We
                 wrote up the findings and proposed changes for the school.
               </p>
-              <Link className="text-link" href="/index">
+              <a className="text-link" href="/index">
                 Browse the wider index
-              </Link>
+              </a>
             </div>
           </article>
         </div>
@@ -145,16 +144,16 @@ export default function Home() {
               photograph, a question, a joke that survives the week, or a note
               about an idea worth trying later.
             </p>
-            <Link className="text-link" href="/about">
+            <a className="text-link" href="/about">
               A short introduction
-            </Link>
+            </a>
           </div>
         </section>
 
         <footer className="site-footer">
           <p>Ray Sha</p>
           <p>Environmental measurement, making, and unfinished questions.</p>
-          <Link href="/index">Index</Link>
+          <a href="/index">Index</a>
         </footer>
       </main>
     </div>

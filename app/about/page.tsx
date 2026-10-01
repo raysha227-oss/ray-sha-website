@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { SiteHeader } from "@/components/layout/site-header";
 
 export const metadata: Metadata = {
@@ -10,7 +9,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="site-shell">
-      <SiteHeader />
+      <SiteHeader active="About" />
       <main id="main-content" tabIndex={-1}>
         <section className="about-page" aria-labelledby="about-title">
           <div className="about-title-block">
@@ -37,15 +36,15 @@ export default function AboutPage() {
               need a picture and a few words.
             </p>
             <div className="about-links">
-              <Link className="text-link" href="/work/kirigami">
+              <a className="text-link" href="/work/kirigami">
                 A making project
-              </Link>
-              <Link className="text-link" href="/work/pesticide-dispersion">
+              </a>
+              <a className="text-link" href="/work/pesticide-dispersion">
                 A field research project
-              </Link>
-              <Link className="text-link" href="/notes">
+              </a>
+              <a className="text-link" href="/notes">
                 The unfinished questions
-              </Link>
+              </a>
             </div>
           </div>
         </section>
@@ -53,7 +52,7 @@ export default function AboutPage() {
         <footer className="site-footer">
           <p>Ray Sha</p>
           <p>A personal archive, still in motion.</p>
-          <Link href="/index">Full index</Link>
+          <a href="/index">Full index</a>
         </footer>
       </main>
     </div>

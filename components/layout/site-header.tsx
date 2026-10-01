@@ -1,23 +1,26 @@
-import Link from "next/link";
-
 const navigation = [
   { label: "Index", href: "/index" },
-  { label: "Work", href: "/#work" },
+  { label: "Work", href: "/work" },
   { label: "Notes", href: "/notes" },
   { label: "About", href: "/about" },
 ] as const;
 
-export function SiteHeader() {
+export function SiteHeader({ active }: { active?: string }) {
   return (
     <header className="site-header">
-      <Link className="site-name" href="/" aria-label="Ray Sha home">
+      <a className="site-name" href="/" aria-label="Ray Sha home">
         Ray Sha
-      </Link>
+      </a>
       <nav aria-label="Primary navigation">
         <ul className="site-nav">
           {navigation.map((item) => (
             <li key={item.label}>
-              <Link href={item.href}>{item.label}</Link>
+              <a
+                href={item.href}
+                aria-current={active === item.label ? "page" : undefined}
+              >
+                {item.label}
+              </a>
             </li>
           ))}
         </ul>

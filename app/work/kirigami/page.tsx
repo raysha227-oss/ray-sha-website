@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Annotation, EditorialFigure } from "@/components/editorial";
 import { SiteHeader } from "@/components/layout/site-header";
 
@@ -12,7 +11,7 @@ export const metadata: Metadata = {
 export default function KirigamiPage() {
   return (
     <div className="site-shell">
-      <SiteHeader />
+      <SiteHeader active="Work" />
       <main id="main-content" tabIndex={-1}>
         <header className="project-hero">
           <p className="eyebrow">Making / 2024—now</p>
@@ -106,7 +105,7 @@ export default function KirigamiPage() {
         <footer className="site-footer">
           <p>Ray Sha</p>
           <p>Next: tracing what remains after a pesticide application.</p>
-          <Link href="/work/pesticide-dispersion">Pesticide fieldwork</Link>
+          <a href="/work/pesticide-dispersion">Pesticide fieldwork</a>
         </footer>
       </main>
     </div>

@@ -12,7 +12,17 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    "dist/**",
+    "work/**",
+    "outputs/**",
   ]),
+  {
+    files: ["app/**/*.tsx", "components/layout/site-header.tsx"],
+    rules: {
+      // Native document navigation avoids relying on the Vinext client router.
+      "@next/next/no-html-link-for-pages": "off",
+    },
+  },
   {
     files: ["components/ui/**/*.{ts,tsx}", "hooks/use-mobile.ts"],
     rules: {
