@@ -1468,6 +1468,142 @@ h1 {
   }
 }
 
+.photo-slider {
+  min-width: 0;
+  width: 100%;
+}
+.photo-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) transparent;
+}
+.photo-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  margin: 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.photo-slide .mosaic-image-frame {
+  aspect-ratio: 4 / 3;
+}
+.photo-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo-slide figcaption {
+  padding-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.photo-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 0.75rem;
+  font-size: 0.875rem;
+}
+.photo-controls div {
+  display: flex;
+  gap: 0.5rem;
+}
+.photo-controls button {
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--foreground);
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+.photo-controls button:hover:not(:disabled) {
+  background: var(--foreground);
+  color: var(--background);
+}
+.photo-controls button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.mosaic-entry-wide.has-image .photo-slider {
+  align-self: start;
+}
+.activity-record,
+.club-record {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: clamp(2rem, 6vw, 6rem);
+  border-top: 1px solid var(--foreground);
+  padding-block: clamp(4rem, 8vw, 7rem);
+}
+.activity-record h2,
+.club-record h2 {
+  font-size: clamp(2.25rem, 4vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  margin: 1.5rem 0;
+}
+.activity-intro p:not(.section-label),
+.club-record p:not(.section-label) {
+  color: #3e3932;
+  font-size: 1rem;
+  max-width: 42rem;
+}
+.event-groups details {
+  border-bottom: 1px solid var(--border);
+}
+.event-groups summary {
+  padding-block: 1.5rem;
+  cursor: pointer;
+  font-size: 1.15rem;
+}
+.event-role {
+  display: block;
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-top: 0.4rem;
+}
+.event-groups dl {
+  margin: 0 0 1.5rem;
+}
+.event-groups dl > div {
+  padding-block: 1rem;
+  border-top: 1px solid var(--border);
+}
+.event-groups dt {
+  font-weight: 600;
+}
+.event-groups dd {
+  margin: 0.5rem 0 0;
+  color: #3e3932;
+  font-size: 1rem;
+}
+.club-record .photo-slider {
+  max-width: 34rem;
+  margin-top: 2rem;
+}
+.club-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.club-timeline li {
+  border-top: 1px solid var(--border);
+  padding-block: 2rem;
+}
+.club-timeline h3 {
+  font-size: 1.75rem;
+  margin: 1rem 0;
+}
+@media (max-width: 760px) {
+  .activity-record,
+  .club-record {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

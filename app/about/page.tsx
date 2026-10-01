@@ -15,25 +15,26 @@ export default function AboutPage() {
         <section className="about-page" aria-labelledby="about-title">
           <div className="about-title-block">
             <p className="eyebrow">About / short version</p>
-            <h1 id="about-title">I follow questions until they need a tool.</h1>
+            <h1 id="about-title">Hi, I’m Ray.</h1>
           </div>
           <div className="about-copy">
             <p>
-              I’m Ray Sha. Much of my work sits between environmental science
-              and engineering: measuring water, air, energy use, or chemical
-              movement, then building a more practical way to ask the next
-              question.
+              I’m interested in environmental science and engineering. Recently,
+              that has meant building a kirigami robot, testing sensors
+              outdoors, and helping study pesticide residues after drone
+              spraying.
             </p>
             <p>
-              Outside the lab, I organize events, speak and debate, cycle, play
-              tennis, cook, make photographs, and paint. I am usually the friend
-              carrying a joke too far—and then turning the same conversation
-              toward technology, ethics, or an implausible “what if?”
+              I’ve also spent a lot of time in student government: planning
+              events, writing scripts, setting up venues, and hosting. Away from
+              that, I cycle, play tennis and erhu, cook, take photographs, and
+              practice Chinese painting. With friends, I tend to be the one
+              making the bad joke.
             </p>
             <p>
-              This site is a working archive, not a complete autobiography. It
-              keeps substantial projects beside small observations because both
-              show what I notice and what I decide to do next.
+              I’m keeping this site as a place for the work and photographs I
+              want to remember. Some entries have a lot of detail. Others only
+              need a picture and a few words.
             </p>
             <div className="about-links">
               <Link className="text-link" href="/work/kirigami">

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MosaicEntry } from "@/components/editorial";
 import { SiteHeader } from "@/components/layout/site-header";
+import { ActivityRecord } from "@/components/editorial/activity-record";
+import { PhotoSlider } from "@/components/editorial/photo-slider";
 
 export const metadata: Metadata = {
   title: "Index",
@@ -18,19 +20,42 @@ export default function IndexPage() {
           <p className="eyebrow">Index / everything around the projects</p>
           <h1>The rest of what I do.</h1>
           <p>
-            The academic page follows three projects in depth; this one is
-            looser, bringing together the committees, speeches, rides,
-            experiments, paintings, and meals that fill the space around them.
+            Event planning, club fieldwork, cameras, conversations, and a few
+            things I do just because I enjoy them.
           </p>
         </header>
 
         <section className="mosaic" aria-label="Personal archive entries">
           <MosaicEntry
             label="Speaking"
-            title="A script is only the beginning"
-            summary="MUN, debate, hosting, and research presentations have taught me to prepare carefully, listen for the question underneath the question, and keep going when the room takes the conversation somewhere better than the script."
+            title="Still a little nervous"
+            summary="At one opening ceremony, I had to introduce an additional teacher with no slide prepared. At a charity event, I held back my cues while the team finished preparing props. I’m more comfortable onstage now, but I still get nervous."
             tags={["argue", "listen", "gather"]}
             size="wide"
+            photos={[
+              {
+                src: "/media/hosting-backstage.jpg",
+                alt: "Ray backstage beside a spotlight",
+                width: 1280,
+                height: 1707,
+                caption: "Before going onstage.",
+                focalPosition: "50% 35%",
+              },
+              {
+                src: "/media/mock-trial-speaking.jpg",
+                alt: "A student standing to speak beside teammates at a mock trial table",
+                width: 1600,
+                height: 1067,
+                caption: "Speaking at SEMT mock trial.",
+              },
+              {
+                src: "/media/mock-trial-preparation.jpg",
+                alt: "Teammates reviewing papers together at mock trial",
+                width: 1067,
+                height: 1600,
+                caption: "Going over the papers together.",
+              },
+            ]}
             image={{
               src: "/media/hosting-backstage.jpg",
               alt: "Ray standing backstage beside a spotlight before a hosting event",
@@ -44,10 +69,41 @@ export default function IndexPage() {
 
           <MosaicEntry
             label="ASB"
-            title="The spreadsheet behind the event"
-            summary="From the audience, ASB looks like assemblies and welcome parties; from inside, it is schedules, budgets, shared files, and the patient work of making sure the next person knows what happens next."
+            title="Before everyone arrives"
+            summary="I served as ASB Vice President and then President. A lot of the work happens before an event starts: writing the script, setting up the venue, assigning jobs, and checking equipment. I especially enjoy seeing everyone’s separate piece come together."
             tags={["gather", "shape", "revise"]}
             size="standard"
+            photos={[
+              {
+                src: "/media/asb-outdoor-setup.jpg",
+                alt: "Students working with buckets and equipment on an outdoor court",
+                width: 1800,
+                height: 1350,
+                caption: "Part of the outdoor event work.",
+              },
+              {
+                src: "/media/asb-backstage-team.jpg",
+                alt: "Students gathered together backstage",
+                width: 1800,
+                height: 1426,
+                caption: "With the team backstage.",
+              },
+              {
+                src: "/media/asb-campaign.jpg",
+                alt: "Ray presenting his ASB president campaign",
+                width: 1800,
+                height: 1350,
+                caption: "The president campaign.",
+                focalPosition: "50% 55%",
+              },
+              {
+                src: "/media/asb-vice-president.jpg",
+                alt: "Ray speaking in front of an ASB campaign projection",
+                width: 1800,
+                height: 1350,
+                caption: "An earlier ASB campaign.",
+              },
+            ]}
             image={{
               src: "/media/asb-campaign.jpg",
               alt: "Ray presenting his ASB president campaign in front of a projected campaign slide",
@@ -61,7 +117,7 @@ export default function IndexPage() {
           <MosaicEntry
             label="Cycling"
             title="The long way home"
-            summary="I cycle because a route changes when I have to feel every bridge, headwind, and wrong turn; sometimes I bring a sensor or camera, and sometimes the ride is allowed to be only a ride."
+            summary="I like going out for a ride. Sometimes I take photographs along the way. I’m also testing a mobile sensor setup, but most rides are just rides."
             tags={["move", "notice"]}
             size="standard"
             image={{
@@ -77,9 +133,32 @@ export default function IndexPage() {
           <MosaicEntry
             label="Energy audit"
             title="Counting what everyone walks past"
-            summary="Across twenty classrooms and two buildings, our environmental club recorded lighting, HVAC, idle equipment, and physical dimensions, then turned those ordinary details into a practical energy brief."
+            summary="Our club checked twenty classrooms and two buildings, recording lights, air conditioning, idle equipment, and room dimensions. We used the findings to write an energy report with changes the school could actually try."
             tags={["measure", "gather", "test"]}
             size="wide"
+            photos={[
+              {
+                src: "/media/energy-audit-walkthrough.jpg",
+                alt: "A dimension marked along a school building exterior",
+                width: 828,
+                height: 1626,
+                caption: "Recording the building dimensions.",
+              },
+              {
+                src: "/media/energy-audit-exterior.jpg",
+                alt: "An exterior passage beside a school building",
+                width: 828,
+                height: 1626,
+                caption: "A photograph from the audit walkthrough.",
+              },
+              {
+                src: "/media/energy-audit-corridor.jpg",
+                alt: "An indoor school corridor with overhead lights",
+                width: 828,
+                height: 1626,
+                caption: "The corridors were part of the survey too.",
+              },
+            ]}
             image={{
               src: "/media/energy-audit-walkthrough.jpg",
               alt: "A measured line over the exterior wall of a school building during an energy audit",
@@ -94,7 +173,7 @@ export default function IndexPage() {
           <MosaicEntry
             label="Water quality"
             title="Taking the kit outside"
-            summary="Water-quality work is satisfyingly direct: carry the case outside, calibrate what needs calibrating, collect the readings, and discover which tidy classroom assumption the water has ignored."
+            summary="We started with test strips, then moved to equipment for ammonia, phosphorus, and dissolved oxygen. Later, we added drone surveys to see more of the river and look for possible sources of the water-quality problems."
             tags={["measure", "test", "notice"]}
             size="wide"
             image={{
@@ -110,7 +189,7 @@ export default function IndexPage() {
           <MosaicEntry
             label="Environmental economics"
             title="Arguing with the discount rate"
-            summary="My working paper compares how Ramsey, Nordhaus, Stern, and Weitzman value the distant future, which sounds abstract until a small change in the discount rate makes an enormous difference to climate policy."
+            summary="I wrote about discount rates for long-term environmental projects. Comparing Ramsey, Nordhaus, Stern, and Weitzman made me ask how much weight today’s decisions should give to people living far in the future."
             tags={["question", "argue", "compare"]}
             size="standard"
             status="Working paper"
@@ -127,7 +206,7 @@ export default function IndexPage() {
           <MosaicEntry
             label="Community organizing"
             title="After YYGS"
-            summary="The summer program ended, but the organizing continued through Students for a Better Future; I now lead its Shanghai chapter, where more than one hundred members turn environmental interest into work we can do together."
+            summary="At YYGS, our group proposed using gene-edited bacteria to help break down marine microplastics. Afterward, I became the Shanghai chapter president of Students for a Better Future, working on practical environmental advocacy, including plastic-waste reduction campaigns."
             tags={["gather", "shape", "revise"]}
             size="wide"
             image={{
@@ -142,16 +221,23 @@ export default function IndexPage() {
 
           <MosaicEntry
             label="Cameras"
-            title="Photography with extra steps"
-            summary="I like ordinary photography, but I also keep finding less convenient ways to make an image, including Raspberry Pi cameras, drone work, and small experiments that turn pressing the shutter into a build."
+            title="On the other side of the camera"
+            summary="For the school TV station, I photographed campus events and wrote news articles. I also helped start the Portrait student blog. Outside that work, I take photos with drones and experiment with Raspberry Pi cameras."
             tags={["frame", "make", "play"]}
             size="standard"
+            image={{
+              src: "/media/tv-camera-work.jpg",
+              alt: "A student operating a camera beside an auditorium audience",
+              width: 1800,
+              height: 1350,
+              caption: "Filming in the auditorium.",
+            }}
           />
 
           <MosaicEntry
             label="Cooking"
-            title="An experiment I can eat"
-            summary="Cooking is where I am happiest changing the procedure halfway through, partly because the feedback is immediate and partly because even a failed result usually smells better than a failed circuit."
+            title="Making dinner"
+            summary="I like cooking at home. Sometimes it’s nice to put the work aside and make dinner."
             tags={["make", "notice", "play"]}
             size="standard"
             image={{
@@ -167,7 +253,7 @@ export default function IndexPage() {
           <MosaicEntry
             label="Tennis"
             title="Mostly after dark"
-            summary="I play tennis recreationally, often under the court lights, where the point is less about keeping a record and more about finding the ball early enough to return it well."
+            summary="I play tennis for fun, often in the evening. I like having something to do that keeps me moving and away from a screen."
             tags={["move", "notice", "play"]}
             size="wide"
             image={{
@@ -179,6 +265,78 @@ export default function IndexPage() {
               focalPosition: "48% 50%",
             }}
           />
+        </section>
+
+        <ActivityRecord />
+
+        <section
+          id="club-activities"
+          className="club-record"
+          aria-labelledby="club-title"
+        >
+          <div>
+            <p className="section-label">E# club / 2024–2026</p>
+            <h2 id="club-title">From test strips to a wider view.</h2>
+            <p>
+              Our water work developed over two years. The energy audit gave us
+              another way to investigate something close to home.
+            </p>
+            <PhotoSlider
+              label="Environmental club"
+              photos={[
+                {
+                  src: "/media/water-quality-kit.jpg",
+                  alt: "Water testing meters and a case laid out on grass",
+                  width: 1350,
+                  height: 1800,
+                  caption: "The water-testing kit, out in the field.",
+                },
+                {
+                  src: "/media/energy-audit-exterior.jpg",
+                  alt: "A passage along the exterior of a school building",
+                  width: 828,
+                  height: 1626,
+                  caption: "Walking the buildings for the energy audit.",
+                },
+                {
+                  src: "/media/energy-audit-corridor.jpg",
+                  alt: "Overhead lights along a school corridor",
+                  width: 828,
+                  height: 1626,
+                  caption: "Recording the spaces we use every day.",
+                },
+              ]}
+            />
+          </div>
+          <ol className="club-timeline">
+            <li>
+              <p className="section-label">2024–2025 / Water testing</p>
+              <h3>Getting better measurements</h3>
+              <p>
+                I worked with the team on repeated water-quality tests. As we
+                moved from strips to professional equipment, we analyzed the
+                readings and wrote reports to explain what we were finding.
+              </p>
+            </li>
+            <li>
+              <p className="section-label">2025–2026 / Drone inspections</p>
+              <h3>Looking beyond the sampling point</h3>
+              <p>
+                We continued testing water and built a simple imaging drone. It
+                helped us inspect a wider area alongside the work we could do
+                from the ground.
+              </p>
+            </li>
+            <li>
+              <p className="section-label">2025–2026 / Energy audit</p>
+              <h3>Bringing the survey back to school</h3>
+              <p>
+                We used the ENERGY STAR K–12 framework to organize our audit,
+                then adapted the findings into reports and practical proposals
+                for our own buildings.
+              </p>
+            </li>
+          </ol>
         </section>
 
         <section
@@ -199,10 +357,10 @@ export default function IndexPage() {
               </h3>
             </article>
             <article>
-              <p>02 / Ask</p>
+              <p>02 / Make</p>
               <h3>
-                One class project followed microfiber filtration, while another
-                examined third places and the social life around them.
+                I started with paper planes and folding. Eventually, I wanted to
+                see whether a kirigami structure could move on its own.
               </h3>
             </article>
             <article>
@@ -224,10 +382,9 @@ export default function IndexPage() {
           <div>
             <h2 id="about-title">The projects are not the whole story.</h2>
             <p>
-              Some interests become years of research, while others remain a
-              meeting, a painting, a ride, a speech, or one unusually good
-              dinner; both scales belong here because both shape what I notice
-              and what I choose to do next.
+              I wanted to keep some of the ordinary parts here too: the team
+              before an event, a camera in the auditorium, dinner at home.
+              They’re part of how I spend my time.
             </p>
           </div>
         </section>

@@ -12,8 +12,8 @@ const notes = [
   {
     number: "01",
     label: "Jokes / memes",
-    title: "A serious room does not have to be a solemn one.",
-    copy: "Humor is how I usually enter a conversation: an exaggerated face, a dad joke, or whatever meme has taken over that week. It makes it easier to meet someone before asking what they actually think.",
+    title: "Usually, it starts with a bad joke.",
+    copy: "I send friends memes and make dad jokes. Humor is often how I connect with people, and it makes it easier to get a conversation going.",
   },
   {
     number: "02",
@@ -24,14 +24,14 @@ const notes = [
   {
     number: "03",
     label: "Sustainable energy",
-    title: "Fast, fair, reliable: choose all three, then argue about how.",
-    copy: "Renewable energy conversations become interesting when the easy agreement ends. We ask who pays for the transition, how reliability changes the answer, and how much people in the future should count in decisions made now.",
+    title: "How quickly can an energy system change?",
+    copy: "At HMUN, I argued for renewable energy while recognizing how difficult the transition can be. I still come back to the questions of reliability, cost, and how countries can work together.",
   },
   {
     number: "04",
     label: "What if?",
     title: "What if better technology were easier to rebuild?",
-    copy: "My favorite hypotheticals turn quickly into design constraints: less expensive, repairable outside a lab, clear about uncertainty, and useful to someone who did not invent it. A wild idea becomes better when another person finds its weak point.",
+    copy: "When I build something, I care about how the parts communicate and whether the interface is easy to use. I want the finished system to be straightforward, even when getting it to work wasn’t.",
   },
 ] as const;
 
@@ -42,12 +42,10 @@ export default function NotesPage() {
       <main id="main-content" tabIndex={-1}>
         <header className="notes-hero">
           <p className="eyebrow">Notes / fragments worth keeping</p>
-          <h1>Some conversations refuse to stay small.</h1>
+          <h1>Things we end up talking about.</h1>
           <p>
-            A break starts with jokes and memes. Five minutes later, we are
-            redesigning a machine, disagreeing about an ethical edge case, or
-            asking whether an energy solution is still sustainable when its
-            hidden costs enter the picture.
+            Jokes, technology, ethics, energy. These are a few of the topics I
+            keep coming back to with friends and in my own work.
           </p>
         </header>
 

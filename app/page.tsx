@@ -9,15 +9,15 @@ export default function Home() {
       <main id="main-content" tabIndex={-1}>
         <section className="prototype-opening" aria-labelledby="opening-title">
           <div>
-            <p className="eyebrow">Work / notes / things still moving</p>
+            <p className="eyebrow">Ray Sha / work and everyday things</p>
             <h1 id="opening-title">
-              Work, questions, pictures, arguments, and a few unfinished things.
+              Things I’m making. Things I’m still figuring out.
             </h1>
           </div>
           <p className="prototype-opening-note">
-            I like tools that make an invisible problem easier to notice. I also
-            like bad jokes, long rides, fieldwork, and conversations that begin
-            with a meme and end somewhere no one expected.
+            I build environmental sensors and robots, do field research, and
+            help run events. I also like cooking, cycling, and sending my
+            friends bad jokes.
           </p>
         </section>
 
@@ -33,12 +33,12 @@ export default function Home() {
             />
             <div className="prototype-lead-copy">
               <p className="kicker">01 / Making</p>
-              <h2>A cut changed the question.</h2>
+              <h2>It started with folding paper.</h2>
               <p>
-                The first question was whether a kirigami shell could move. The
-                better question became whether it could carry sensors into
-                drains, riverbanks, and narrow canals without sending a person
-                into the same space.
+                I liked making paper planes, then started experimenting with
+                kirigami. That led to a moving shell, a camera, and eventually
+                environmental sensors. Each version gave me something else to
+                work out.
               </p>
               <Link className="text-link" href="/work/kirigami">
                 Open the build notes
@@ -49,11 +49,11 @@ export default function Home() {
           <article className="prototype-research">
             <div className="prototype-research-copy">
               <p className="kicker">02 / Field research</p>
-              <h2>The spray ends before the measurement problem does.</h2>
+              <h2>What happens after spraying?</h2>
               <p>
-                A UAV application lasts minutes. The residue story continues
-                through air, crop, soil, and mulch samples, followed by repeated
-                extraction and analysis.
+                I joined a research team studying where drone-applied pesticides
+                go. We sampled air, crops, soil, and mulch, then followed how
+                the residues changed over time.
               </p>
               <Link
                 className="text-link text-link-light"
@@ -77,10 +77,10 @@ export default function Home() {
           >
             <div className="conversation-intro">
               <p className="section-label">Notes / with friends</p>
-              <h2 id="conversation-title">The useful part is the pivot.</h2>
+              <h2 id="conversation-title">We were just talking.</h2>
               <p>
-                We trade memes and very committed dad jokes. Then someone asks a
-                question that changes the register of the room.
+                A lot of our conversations start with memes and dad jokes.
+                Sometimes we end up arguing about energy or technology.
               </p>
             </div>
             <div className="conversation-stack">
@@ -121,12 +121,11 @@ export default function Home() {
             />
             <div>
               <p className="kicker">03 / Counting</p>
-              <h2>Waste hides in ordinary rooms.</h2>
+              <h2>A closer look at our buildings.</h2>
               <p>
-                An energy audit made the familiar measurable: lighting, HVAC,
-                idle equipment, and the dimensions everyone walks past. The
-                result was not a dramatic invention, but a practical brief about
-                what could change next.
+                Our environmental club checked lights, air conditioning, and
+                idle equipment across twenty classrooms and two buildings. We
+                wrote up the findings and proposed changes for the school.
               </p>
               <Link className="text-link" href="/index">
                 Browse the wider index

@@ -1,4 +1,5 @@
 import { TagList } from "./tag-list";
+import { PhotoSlider, type GalleryPhoto } from "./photo-slider";
 
 export type MosaicEntrySize = "small" | "standard" | "wide" | "tall";
 
@@ -18,6 +19,7 @@ type MosaicEntryProps = {
   tags: readonly string[];
   size?: MosaicEntrySize;
   image?: MosaicImage;
+  photos?: readonly GalleryPhoto[];
   status?: string;
   recognition?: string;
   id?: string;
@@ -30,6 +32,7 @@ export function MosaicEntry({
   tags,
   size = "standard",
   image,
+  photos,
   status,
   recognition,
   id,
@@ -37,9 +40,11 @@ export function MosaicEntry({
   return (
     <article
       id={id}
-      className={`mosaic-entry mosaic-entry-${size}${image ? " has-image" : ""}`}
+      className={`mosaic-entry mosaic-entry-${size}${image || photos?.length ? " has-image" : ""}`}
     >
-      {image ? (
+      {photos?.length ? (
+        <PhotoSlider photos={photos} label={label} />
+      ) : image ? (
         <figure className="mosaic-figure">
           <div className="mosaic-image-frame">
             {/* Local, metadata-stripped assets keep this component server-rendered in Vinext. */}
