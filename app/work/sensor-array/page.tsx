@@ -14,10 +14,10 @@ export default function SensorArrayPage() {
       <main id="main-content" tabIndex={-1}>
         <header className="index-hero">
           <p className="eyebrow">Electronics / ongoing build</p>
-          <h1>Taking the measurements with me.</h1>
+          <h1>Taking air-pollution measurements with me.</h1>
           <p>
-            From the sampler I worked with in the field to a sensor array I’m
-            building now.
+            A low-cost mobile array for repeated, geolocated measurements across
+            agricultural and urban environments.
           </p>
         </header>
         <section className="work-collection">
@@ -29,17 +29,17 @@ export default function SensorArrayPage() {
             />
             <div>
               <p className="kicker">01 / A starting point</p>
-              <h2>The sampler came first.</h2>
+              <h2>Precision revealed a timing problem.</h2>
               <p>
                 During pesticide field research, I worked with a sampler
-                alongside the plots. That equipment became a starting point for
-                a new question: how could I improve the setup and collect
-                environmental readings while moving?
+                alongside the plots. Compound-specific laboratory tests provide
+                precise measurements, but collecting, extracting, and analyzing
+                each sample takes time and resources.
               </p>
               <p>
-                The research follows residues in air, crops, soil, and mulch.
-                This build follows a different part of that story: making the
-                electronics work together.
+                That limitation suggested a different engineering question: what
+                could a low-cost mobile system measure immediately and
+                repeatedly, without pretending to replace laboratory analysis?
               </p>
               <a className="text-link" href="/work/pesticide-dispersion">
                 Back to the field research
@@ -52,34 +52,36 @@ export default function SensorArrayPage() {
               photos={galleries.sensors}
             />
             <div>
-              <p className="kicker">02 / On the workbench</p>
+              <p className="kicker">02 / Current project</p>
               <h2>CoreS3, SEN66, BME688—and a lot of wiring.</h2>
               <p>
-                I’m putting together an array around these components, with
-                other parts supporting the setup. The photographs show the
-                electronics on a car roof and the readings on the screen. It’s
-                still a build in progress.
+                I’m combining particulate and VOC sensing with microclimate,
+                light, and GPS data. The photographs show the electronics on a
+                car roof and the readings on the screen. It is still a build in
+                progress.
               </p>
               <p>
-                I’m working toward combining environmental readings with GPS and
-                imaging, so I can collect spatial data while biking, walking, or
-                travelling in a car.
+                The immediate focus is broad air-pollution monitoring while
+                biking, walking, or travelling in a car. Agriculture is one use
+                case, but the array is designed for wider environmental
+                measurement.
               </p>
             </div>
           </article>
           <article className="project-reading">
-            <p className="kicker">03 / What comes next</p>
-            <h2>Making sense of a moving measurement.</h2>
+            <p className="kicker">03 / Why make it mobile</p>
+            <h2>Timelier data, collected by more people.</h2>
             <p>
-              I’m exploring QGIS, AI-assisted processing, and ways other people
-              could help collect data. One longer-term question is whether
-              machine learning could help relate these readings to pesticide
-              levels. That remains something to investigate; the array has not
-              yet demonstrated pesticide-specific detection.
+              I’m exploring QGIS and AI-assisted processing to categorize broad
+              pollution patterns across space. A low-cost system could make
+              repeated measurements more practical for field studies and citizen
+              science.
             </p>
             <p>
-              For now, the next step is to keep testing the setup and understand
-              what the readings can tell me.
+              Relating these signals to pesticide levels remains a longer-term
+              research question; the array has not demonstrated
+              pesticide-specific detection. For now, I am testing what its
+              air-quality readings can reliably show.
             </p>
           </article>
         </section>

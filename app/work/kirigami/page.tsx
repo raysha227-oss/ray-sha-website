@@ -27,10 +27,10 @@ export default function KirigamiPage() {
           aria-label="Kirigami prototype"
         >
           <EditorialFigure
-            src="/media/kirigami-cut-structure.jpg"
-            alt="Several translucent PET kirigami structures nested together"
-            width={1080}
-            height={1920}
+            src="/media/kirigami-pet-cut.jpg"
+            alt="A laser-cut PET sheet showing a repeating kirigami pattern"
+            width={1200}
+            height={1600}
             priority
             caption="The cut pattern lets a flat PET sheet stretch, curve, and recover."
           />
@@ -85,11 +85,11 @@ export default function KirigamiPage() {
 
         <section className="project-image-break">
           <EditorialFigure
-            src="/media/kirigami-prototype.jpg"
-            alt="An exposed prototype with a pump, circuit boards, and connected wires on a worktable"
-            width={1920}
-            height={1080}
-            caption="An exposed electronics iteration before the flexible shell was added."
+            src="/media/kirigami-pet-body.jpg"
+            alt="A completed flexible PET kirigami body around a moving mechanism"
+            width={1200}
+            height={1600}
+            caption="A completed PET body: inexpensive to recut, light to carry, and flexible around the mechanism."
           />
           <div>
             <p className="section-label">Still unresolved</p>

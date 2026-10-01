@@ -109,7 +109,7 @@ export default function NotesPage() {
               target="_blank"
               rel="noreferrer"
             >
-              A critique of Law Without Order ↗
+              A critique of Law Without Order
             </a>
           </p>
         </aside>

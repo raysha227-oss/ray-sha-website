@@ -8,6 +8,38 @@ export default function Home() {
     <div className="site-shell">
       <SiteHeader />
       <main id="main-content" tabIndex={-1}>
+        <details className="project-rail">
+          <summary className="project-rail-tab">3 projects</summary>
+          <nav
+            className="project-rail-panel"
+            aria-label="Three connected projects"
+          >
+            <p>One measurement problem, three approaches.</p>
+            <ol>
+              <li>
+                <a href="/work/kirigami">
+                  <span>01</span>
+                  <strong>Reach safely</strong>
+                  <small>Cut PET robot</small>
+                </a>
+              </li>
+              <li>
+                <a href="/work/pesticide-dispersion">
+                  <span>02</span>
+                  <strong>Measure precisely</strong>
+                  <small>Pesticide fieldwork</small>
+                </a>
+              </li>
+              <li>
+                <a href="/work/sensor-array">
+                  <span>03</span>
+                  <strong>Measure sooner</strong>
+                  <small>Mobile sensor array</small>
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </details>
         <section className="prototype-opening" aria-labelledby="opening-title">
           <div>
             <p className="eyebrow">Ray Sha / work and everyday things</p>
@@ -25,42 +57,46 @@ export default function Home() {
         <div id="work" className="prototype-stream">
           <article className="prototype-lead">
             <EditorialFigure
-              src="/media/kirigami-cut-structure.jpg"
-              alt="Several translucent PET kirigami structures nested together"
-              width={1080}
-              height={1920}
+              src="/media/kirigami-pet-cut.jpg"
+              alt="A laser-cut sheet of PET showing a repeating kirigami pattern"
+              width={1200}
+              height={1600}
               priority
-              caption="PET after cutting and folding tests. A flat sheet becomes a structure that can bend through tighter spaces."
+              caption="A repeating cut pattern turns a flat PET sheet into a flexible structure."
             />
             <div className="prototype-lead-copy">
-              <p className="kicker">01 / Making</p>
-              <h2>It started with folding paper.</h2>
+              <p className="kicker">01 / Safety through flexibility</p>
+              <h2>Cutting PET to reach difficult places.</h2>
               <p>
-                I liked making paper planes, then started experimenting with
-                kirigami. That led to a moving shell, a camera, and eventually
-                environmental sensors. Each version gave me something else to
-                work out.
+                Kirigami cut patterns let a light sheet stretch and bend. I used
+                them to build a low-cost robot that could carry sensors into
+                drains, riverbanks, and canals where direct inspection can be
+                awkward or unsafe.
               </p>
-              <a className="text-link" href="/work/kirigami">
-                Open the build notes
+              <a className="project-cta" href="/work/kirigami">
+                <span>Project 01</span>
+                <strong>See the PET cuts and build notes</strong>
               </a>
             </div>
           </article>
 
           <article className="prototype-research">
             <div className="prototype-research-copy">
-              <p className="kicker">02 / Field research</p>
-              <h2>What happens after spraying?</h2>
+              <p className="kicker">02 / Precise measurement</p>
+              <h2>Following what remains after spraying.</h2>
               <p>
-                I joined a research team studying where drone-applied pesticides
-                go. We sampled air, crops, soil, and mulch, then followed how
-                the residues changed over time.
+                My interest in drones, mechanics, and environmental science led
+                me to a research team studying UAV-applied fungicides. I helped
+                collect and extract air, crop, soil, and mulch samples to
+                compare their distribution and dissipation—and to think more
+                carefully about persistence and possible inhalation exposure.
               </p>
               <a
-                className="text-link text-link-light"
+                className="project-cta project-cta-light"
                 href="/work/pesticide-dispersion"
               >
-                Follow the sampling path
+                <span>Project 02</span>
+                <strong>Follow the field sampling path</strong>
               </a>
             </div>
             <EditorialFigure
@@ -78,81 +114,55 @@ export default function Home() {
               photos={galleries.sensors}
             />
             <div>
-              <p className="kicker">03 / Electronics in progress</p>
-              <h2>From the sampler to my own array.</h2>
+              <p className="kicker">03 / Timely, accessible sensing</p>
+              <h2>From precise samples to repeated measurements.</h2>
               <p>
-                Working with the field sampler gave me a starting point. Now I’m
-                building a smaller electronics setup around a CoreS3, SEN66,
-                BME688, and other components. I want to see what I can learn by
-                taking measurements on the move.
+                Laboratory tests are precise, but they take time and resources.
+                I’m now building a low-cost mobile array around a CoreS3, SEN66,
+                BME688, and other sensors for near-real-time, geolocated air-
+                pollution measurements. The longer-term goal is a tool that can
+                support field studies and citizen science.
               </p>
-              <a className="text-link" href="/work/sensor-array">
-                Follow the current build
+              <a className="project-cta" href="/work/sensor-array">
+                <span>Project 03</span>
+                <strong>Follow the current sensor build</strong>
               </a>
             </div>
           </article>
 
-          <section
-            className="conversation-preview"
-            aria-labelledby="conversation-title"
-          >
-            <div className="conversation-intro">
-              <p className="section-label">Notes / with friends</p>
-              <h2 id="conversation-title">We were just talking.</h2>
-              <p>
-                A lot of our conversations start with memes and dad jokes.
-                Sometimes we end up arguing about energy or technology.
-              </p>
-            </div>
-            <div className="conversation-stack">
-              <article>
-                <span>Ethics</span>
-                <h3>
-                  Does a trolley problem become different when software has to
-                  choose?
-                </h3>
-              </article>
-              <article>
-                <span>Energy</span>
-                <h3>
-                  How fast should a renewable transition move if reliability is
-                  part of fairness?
-                </h3>
-              </article>
-              <article>
-                <span>What if?</span>
-                <h3>
-                  What if better technology meant easier to repair, repeat, and
-                  share?
-                </h3>
-              </article>
-              <a className="text-link" href="/notes">
-                Read the conversation notes
-              </a>
-            </div>
-          </section>
-
-          <article className="prototype-pair">
-            <EditorialFigure
-              src="/media/energy-audit-walkthrough.jpg"
-              alt="A measured line over the exterior wall of a school building during an energy audit"
-              width={828}
-              height={1626}
-              caption="Recording exterior dimensions during an audit across twenty classrooms and two buildings."
+          <article className="prototype-pair home-index-preview">
+            <PhotoSlider
+              label="Speaking, organizing, cycling, and cooking"
+              photos={galleries.homeIndex}
+              variant="window"
             />
             <div>
-              <p className="kicker">04 / Counting</p>
-              <h2>A closer look at our buildings.</h2>
+              <p className="kicker">Beyond the three projects</p>
+              <h2>Events, arguments, cameras, rides, and dinner.</h2>
               <p>
-                Our environmental club checked lights, air conditioning, and
-                idle equipment across twenty classrooms and two buildings. We
-                wrote up the findings and proposed changes for the school.
+                The index is a wider picture of me: ASB event planning, public
+                speaking, Model UN, environmental organizing, photography,
+                cycling, cooking, and the smaller things around the work.
               </p>
-              <a className="text-link" href="/index">
-                Browse the wider index
+              <a className="project-cta" href="/index">
+                <span>Personal index</span>
+                <strong>Browse the wider archive</strong>
               </a>
             </div>
           </article>
+
+          <aside className="home-notes" aria-label="Notes preview">
+            <div>
+              <p className="section-label">Notes / small thoughts</p>
+              <p>
+                Bad jokes, technology, ethics, energy, and questions I have not
+                finished.
+              </p>
+            </div>
+            <a className="text-link" href="/notes">
+              Open notes
+            </a>
+          </aside>
         </div>
 
         <section className="prototype-closing" aria-labelledby="closing-title">

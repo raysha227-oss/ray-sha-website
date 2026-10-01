@@ -11,21 +11,21 @@ const projects = [
   {
     number: "01",
     title: "Kirigami environmental robot",
-    copy: "Paper folding turned into a moving shell, then a camera and environmental sensors. These are the build notes.",
+    copy: "Laser-cut PET becomes a flexible, low-cost body for carrying sensors into confined places that can be difficult or unsafe to inspect.",
     href: "/work/kirigami",
     gallery: "kirigami",
   },
   {
     number: "02",
     title: "Pesticide field research",
-    copy: "Following drone-applied fungicides through air, crops, soil, and mulch, from sampling to analysis.",
+    copy: "Following drone-applied fungicides through air, crops, soil, and mulch to study distribution, dissipation, persistence, and possible exposure.",
     href: "/work/pesticide-dispersion",
     gallery: "fieldwork",
   },
   {
     number: "03",
-    title: "A sensor array in motion",
-    copy: "From the field sampler to a CoreS3, SEN66, BME688, and a mobile sensing setup. An electronics project I’m working on now.",
+    title: "A mobile air-pollution sensor array",
+    copy: "The current project: a CoreS3, SEN66, BME688, and other sensors working together for timely, geolocated measurements while moving.",
     href: "/work/sensor-array",
     gallery: "sensors",
   },
@@ -55,7 +55,7 @@ export default function WorkPage() {
                 </h2>
                 <p>{project.copy}</p>
                 <a className="text-link" href={project.href}>
-                  Open the project ↗
+                  Open the project
                 </a>
               </div>
             </article>
