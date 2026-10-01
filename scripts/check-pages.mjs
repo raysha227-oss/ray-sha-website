@@ -7,6 +7,7 @@ const pages = [
   "/notes",
   "/about",
   "/work/kirigami",
+  "/work/sensor-array",
   "/work/pesticide-dispersion",
 ];
 for (const page of pages) {

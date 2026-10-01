@@ -1,4 +1,6 @@
 import { EditorialFigure } from "@/components/editorial";
+import { PhotoSlider } from "@/components/editorial/photo-slider";
+import { galleries } from "@/content/galleries";
 import { SiteHeader } from "@/components/layout/site-header";
 
 export default function Home() {
@@ -70,6 +72,26 @@ export default function Home() {
             />
           </article>
 
+          <article className="prototype-pair">
+            <PhotoSlider
+              label="Building the sensor array"
+              photos={galleries.sensors}
+            />
+            <div>
+              <p className="kicker">03 / Electronics in progress</p>
+              <h2>From the sampler to my own array.</h2>
+              <p>
+                Working with the field sampler gave me a starting point. Now I’m
+                building a smaller electronics setup around a CoreS3, SEN66,
+                BME688, and other components. I want to see what I can learn by
+                taking measurements on the move.
+              </p>
+              <a className="text-link" href="/work/sensor-array">
+                Follow the current build
+              </a>
+            </div>
+          </article>
+
           <section
             className="conversation-preview"
             aria-labelledby="conversation-title"
@@ -119,7 +141,7 @@ export default function Home() {
               caption="Recording exterior dimensions during an audit across twenty classrooms and two buildings."
             />
             <div>
-              <p className="kicker">03 / Counting</p>
+              <p className="kicker">04 / Counting</p>
               <h2>A closer look at our buildings.</h2>
               <p>
                 Our environmental club checked lights, air conditioning, and

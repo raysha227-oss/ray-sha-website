@@ -57,6 +57,11 @@ export default function PesticidePage() {
               second layer of repeated, mobile sensing that could show where
               slower analysis was most needed.
             </p>
+            <p>
+              I also spoke with drone operators about the practical side of
+              pesticide application: access to drones, charging, and how the
+              equipment fits into their work.
+            </p>
             <Annotation label="Boundary">
               This work does not claim that a low-cost sensor can replace
               compound-specific laboratory analysis.
@@ -123,6 +128,9 @@ export default function PesticidePage() {
               it. It’s ongoing work; the laboratory measurements remain the
               reference.
             </p>
+            <a className="text-link" href="/work/sensor-array">
+              Open the sensor-array build
+            </a>
           </div>
         </section>
 

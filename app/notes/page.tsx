@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { PhotoSlider } from "@/components/editorial/photo-slider";
+import { galleries } from "@/content/galleries";
 import { SiteHeader } from "@/components/layout/site-header";
 
 export const metadata: Metadata = {
@@ -62,6 +64,55 @@ export default function NotesPage() {
             </article>
           ))}
         </section>
+
+        <section className="work-collection" aria-label="Photographic notes">
+          <article className="work-collection-entry">
+            <PhotoSlider
+              label="Lab notebook photographs"
+              photos={galleries.labnotes}
+              variant="window"
+            />
+            <div>
+              <p className="section-label">Small records / lab</p>
+              <h2>What I keep from the lab.</h2>
+              <p>
+                A few photographs from chemistry and environmental science
+                experiments: glassware, samples, and the setup around them.
+              </p>
+            </div>
+          </article>
+          <article className="work-collection-entry">
+            <PhotoSlider
+              label="Subway and WAIC photographs"
+              photos={galleries.everyday}
+            />
+            <div>
+              <p className="section-label">Between things</p>
+              <h2>A few things along the way.</h2>
+              <p>
+                Subway rides and a visit to WAIC. Some photographs stay here
+                simply because I want to remember them.
+              </p>
+              <a className="text-link" href="/index">
+                More rides, hosting, and everyday things
+              </a>
+            </div>
+          </article>
+        </section>
+        <aside className="medium-note">
+          <p className="section-label">Writing / for fun</p>
+          <p>
+            I sometimes write on Medium, too.{" "}
+            <a
+              className="text-link"
+              href="https://raysha1.medium.com/a-critique-of-law-without-order-1b7f234dfec4"
+              target="_blank"
+              rel="noreferrer"
+            >
+              A critique of Law Without Order ↗
+            </a>
+          </p>
+        </aside>
 
         <section className="question-strip" aria-labelledby="questions-title">
           <p className="section-label">Open tabs</p>

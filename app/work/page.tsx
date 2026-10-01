@@ -25,8 +25,8 @@ const projects = [
   {
     number: "03",
     title: "A sensor array in motion",
-    copy: "I’m developing a mobile setup that combines pollution sensors, GPS, and imaging. I’m still testing how to collect useful readings while moving.",
-    href: "/work/pesticide-dispersion#mobile-sensing",
+    copy: "From the field sampler to a CoreS3, SEN66, BME688, and a mobile sensing setup. An electronics project I’m working on now.",
+    href: "/work/sensor-array",
     gallery: "sensors",
   },
 ] as const;

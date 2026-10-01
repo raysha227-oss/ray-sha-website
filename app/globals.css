@@ -1789,3 +1789,10 @@ h1 {
     transition-duration: 0.01ms !important;
   }
 }
+
+.medium-note {
+  margin: 2rem 0 4rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border);
+  max-width: 48rem;
+}
