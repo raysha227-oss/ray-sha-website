@@ -18,22 +18,20 @@ export default function AboutPage() {
           </div>
           <div className="about-copy">
             <p>
-              I’m interested in environmental science and engineering. Recently,
-              that has meant building a kirigami robot, testing sensors
-              outdoors, and helping study pesticide residues after drone
-              spraying.
+              I build environmental tools: a flexible kirigami robot, a mobile
+              sensor array, and a Raspberry Pi camera. I also study what happens
+              to pesticide residues after drone spraying.
             </p>
             <p>
-              I’ve also spent a lot of time in student government: planning
-              events, writing scripts, setting up venues, and hosting. Away from
-              that, I cycle, play tennis and erhu, cook, take photographs, and
-              practice Chinese painting. With friends, I tend to be the one
-              making the bad joke.
+              In student government, I plan carefully but try not to treat
+              people like parts in a workflow. I ask what they want to do,
+              notice when the plan is asking too much, and keep space for ideas
+              I did not think of.
             </p>
             <p>
-              I’m keeping this site as a place for the work and photographs I
-              want to remember. Some entries have a lot of detail. Others only
-              need a picture and a few words.
+              Away from projects, I cycle, cook, play tennis and erhu, paint,
+              take photographs, and make bad jokes. A rabbit, penguin, and seal
+              serve as my unofficial luck committee.
             </p>
             <div className="about-links">
               <a className="text-link" href="/work/kirigami">

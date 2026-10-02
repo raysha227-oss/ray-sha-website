@@ -11,20 +11,14 @@ export function ActivityRecord() {
         <p className="section-label">ASB / behind the events</p>
         <h2 id="activity-title">What I actually worked on.</h2>
         <p>
-          For the Welcome Party, I wanted people to have a choice: a quieter
-          place to talk, a group game to join, or somewhere to get food and
-          drinks. Planning meant working out the spaces, the script, and how
-          people would move between activities.
+          For the Welcome Party, I planned a quiet place to talk, a group game,
+          and food and drinks. Different people could join in differently.
         </p>
         <p>
-          The NFC activity had a different idea: collect students’ music
-          recommendations and hide a selection around campus for people to find.
-          Intertextuality brought writing, research, engineering, and
-          AI-assisted exploration into the same competition.
-        </p>
-        <p>
-          Some events were mine to lead. For others, I took on a smaller part of
-          the team’s work.
+          Leading also meant listening before assigning work, noticing when a
+          teammate had too much, and changing the workflow instead of adding
+          pressure. Some events were mine to lead; in others, I took one useful
+          part and did it well.
         </p>
       </div>
       <div className="event-groups">

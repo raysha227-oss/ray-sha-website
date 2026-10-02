@@ -38,7 +38,7 @@ export default function IndexPage() {
           <MosaicEntry
             label="ASB"
             title="Before everyone arrives"
-            summary="I served as ASB Vice President and then President. A lot of the work happens before an event starts: writing the script, setting up the venue, assigning jobs, and checking equipment. I especially enjoy seeing everyone’s separate piece come together."
+            summary="As Vice President and then President, I learned to ask what people wanted to take on, adjust the plan when someone was overloaded, and leave room for a better idea than mine. The event still had to work; the team did too."
             tags={["gather", "shape", "revise"]}
             size="standard"
           />
@@ -87,8 +87,8 @@ export default function IndexPage() {
 
           <MosaicEntry
             label="Cameras"
-            title="On the other side of the camera"
-            summary="For the school TV station, I photographed campus events and wrote news articles. I also helped start the Portrait student blog. Outside that work, I take photos with drones and experiment with Raspberry Pi cameras."
+            title="A camera I could afford to rebuild"
+            summary="I photographed school events, helped start the Portrait student blog, and built a camera around a Raspberry Pi. I liked that the cheap parts made the system understandable, repairable, and mine."
             tags={["frame", "make", "play"]}
             size="standard"
           />
@@ -108,6 +108,14 @@ export default function IndexPage() {
             tags={["move", "notice", "play"]}
             size="wide"
           />
+
+          <MosaicEntry
+            label="Lucky desk crew"
+            title="Rabbit, penguin, seal"
+            summary="Three stuffed animals travel between my desk and suitcase. I call them mascots; bringing them along makes difficult days feel a little more manageable. Photographs later."
+            tags={["notice", "play", "gather"]}
+            size="standard"
+          />
         </section>
 
         <ActivityRecord />
@@ -121,8 +129,8 @@ export default function IndexPage() {
             <p className="section-label">E# club / 2024–2026</p>
             <h2 id="club-title">From test strips to a wider view.</h2>
             <p>
-              Our water work developed over two years. The energy audit gave us
-              another way to investigate something close to home.
+              Two years of water testing, drone surveys, and a school energy
+              audit.
             </p>
             <PhotoSlider
               label="Environmental club"
@@ -135,27 +143,24 @@ export default function IndexPage() {
               <p className="section-label">2024–2025 / Water testing</p>
               <h3>Getting better measurements</h3>
               <p>
-                I worked with the team on repeated water-quality tests. As we
-                moved from strips to professional equipment, we analyzed the
-                readings and wrote reports to explain what we were finding.
+                We moved from test strips to better equipment, compared repeated
+                readings, and wrote reports on what we found.
               </p>
             </li>
             <li>
               <p className="section-label">2025–2026 / Drone inspections</p>
               <h3>Looking beyond the sampling point</h3>
               <p>
-                We continued testing water and built a simple imaging drone. It
-                helped us inspect a wider area alongside the work we could do
-                from the ground.
+                We built a simple imaging drone to add visual context beyond
+                each ground sampling point.
               </p>
             </li>
             <li>
               <p className="section-label">2025–2026 / Energy audit</p>
               <h3>Bringing the survey back to school</h3>
               <p>
-                We used the ENERGY STAR K–12 framework to organize our audit,
-                then adapted the findings into reports and practical proposals
-                for our own buildings.
+                We audited twenty classrooms and two buildings, then proposed
+                changes the school could actually try.
               </p>
             </li>
           </ol>

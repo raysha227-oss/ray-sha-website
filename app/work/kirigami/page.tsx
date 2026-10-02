@@ -15,10 +15,10 @@ export default function KirigamiPage() {
       <main id="main-content" tabIndex={-1}>
         <header className="project-hero">
           <p className="eyebrow">Making / 2024—now</p>
-          <h1>A cut changed the question.</h1>
+          <h1>A cut made room to move.</h1>
           <p>
-            Kirigami began as a mechanical curiosity. It became a way to carry
-            sensors into places that are awkward or unsafe to inspect directly.
+            A low-cost robot for carrying sensors into drains, riverbanks, and
+            canals that are awkward or unsafe to inspect directly.
           </p>
         </header>
 
@@ -36,16 +36,15 @@ export default function KirigamiPage() {
           />
           <div className="project-reading">
             <p>
-              I modeled four main iterations in SolidWorks, laser-cut the
-              structures from PET, and integrated odor, TDS, and ORP sensing.
-              The shell stayed inexpensive and light enough to remake after a
-              failed trial instead of treating every version as precious.
+              I modeled four main versions in SolidWorks and laser-cut each body
+              from PET. The cuts let a flat sheet stretch around the mechanism;
+              the low cost let me recut it whenever a trial exposed a problem.
             </p>
             <p>
-              Tests in drainage ducts and simulated odorous environments moved
-              the work beyond “can it move?” The harder problem was whether the
-              motion could remain useful while the sensors collected readable
-              environmental information.
+              I added odor, TDS, and ORP sensing, then tested movement and
+              readings in drainage ducts and simulated odorous environments. The
+              point was never movement alone. It was reaching somewhere a person
+              should not need to enter.
             </p>
             <Annotation label="Design question">
               What if field equipment were designed around the places people
@@ -57,47 +56,44 @@ export default function KirigamiPage() {
         <section className="iteration-band" aria-labelledby="iterations-title">
           <div>
             <p className="section-label">Four iterations</p>
-            <h2 id="iterations-title">
-              Shape, movement, sensing, then context.
-            </h2>
+            <h2 id="iterations-title">Cut, move, sense, repeat.</h2>
           </div>
           <ol>
             <li>
               <span>01</span>
-              <p>Find a cut pattern that opens without tearing.</p>
+              <p>Cut a pattern that opens without tearing.</p>
             </li>
             <li>
               <span>02</span>
-              <p>Make the body flex around a moving mechanism.</p>
+              <p>Fit the body around a moving mechanism.</p>
             </li>
             <li>
               <span>03</span>
-              <p>Add sensors without making movement impossible.</p>
+              <p>Add sensors without stopping the movement.</p>
             </li>
             <li>
               <span>04</span>
-              <p>
-                Test where water, odor, and tight spaces complicate the design.
-              </p>
+              <p>Test where water, odor, and tight spaces change the design.</p>
             </li>
           </ol>
         </section>
 
         <section className="project-image-break">
           <EditorialFigure
-            src="/media/kirigami-pet-body.jpg"
-            alt="A completed flexible PET kirigami body around a moving mechanism"
-            width={1200}
-            height={1600}
-            caption="A completed PET body: inexpensive to recut, light to carry, and flexible around the mechanism."
+            src="/media/go-robot-finished.jpg"
+            alt="The completed robot showing its flexible PET body, drive, and sensors"
+            width={1800}
+            height={1200}
+            caption="The completed device, from the cut PET body to the sensing head."
           />
           <div>
-            <p className="section-label">Still unresolved</p>
-            <h2>A platform is not useful just because it moves.</h2>
+            <p className="section-label">What carries forward</p>
+            <h2>Cheap enough to rebuild.</h2>
             <p>
-              The next work is about reliability: protecting components,
-              separating sensor interference from real change, and deciding when
-              a cheap field reading is enough to guide a closer test.
+              This project taught me to build around cost, access, and repair.
+              That same frugal approach now shapes my mobile sensor array. A
+              later robot version will explore accessible on-device AI inference
+              while keeping the hardware practical to reproduce.
             </p>
           </div>
         </section>
