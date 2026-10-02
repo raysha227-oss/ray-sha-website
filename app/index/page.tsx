@@ -68,10 +68,10 @@ export default function IndexPage() {
           />
 
           <MosaicEntry
-            label="Water quality"
-            title="A separate set of readings"
-            summary="Separate from E#, I used a dissolved-oxygen meter to take my own readings beside a canal. I recorded the instrument reading and the surrounding conditions as a small field record."
-            tags={["measure", "test", "notice"]}
+            label="Water testing on trips"
+            title="Sometimes the kit comes with me"
+            summary="When I travel, I sometimes pack a small water-testing kit. If a canal or river catches my attention, I stop, take a dissolved-oxygen reading, and photograph the site. I do it out of curiosity, without turning every stop into a formal project."
+            tags={["measure", "notice", "move"]}
             size="wide"
           />
 
