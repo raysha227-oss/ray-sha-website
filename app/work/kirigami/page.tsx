@@ -98,10 +98,35 @@ export default function KirigamiPage() {
           </div>
         </section>
 
+        <section
+          className="research-record"
+          aria-labelledby="fieldwork-next-title"
+        >
+          <div>
+            <p className="section-label">What came next / October 2025</p>
+            <h2 id="fieldwork-next-title">The field changed the question.</h2>
+            <p>
+              A teacher at school connected me with a research team at ECUST.
+              They invited me to join experiments tracing how pesticides
+              distribute and dissipate after drone application.
+            </p>
+            <p>
+              During the October fieldwork, I worked on sampling, data
+              correction, and methodology. It moved me from building a device
+              for hard-to-reach places to asking how measurements should be
+              collected and compared outdoors.
+            </p>
+          </div>
+          <a className="project-cta" href="/work/pesticide-dispersion">
+            <span>Next project / 02</span>
+            <strong>Follow the pesticide fieldwork →</strong>
+          </a>
+        </section>
+
         <footer className="site-footer">
           <p>Ray Sha</p>
-          <p>Next: tracing what remains after a pesticide application.</p>
-          <a href="/work/pesticide-dispersion">Pesticide fieldwork</a>
+          <p>Built, tested, revised.</p>
+          <a href="/work">All work</a>
         </footer>
       </main>
     </div>
