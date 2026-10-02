@@ -27,20 +27,36 @@ export default function IndexPage() {
 
         <section className="mosaic" aria-label="Personal archive entries">
           <MosaicEntry
-            label="Speaking"
-            title="Still a little nervous"
-            summary="At one opening ceremony, I had to introduce an additional teacher with no slide prepared. At a charity event, I held back my cues while the team finished preparing props. I’m more comfortable onstage now, but I still get nervous."
-            tags={["argue", "listen", "gather"]}
+            label="Model UN"
+            title="Speaking before the sentence felt finished"
+            summary="MUN made me listen for where the room was moving, then decide when I had something useful to add. I still rehearsed too much, but I got better at speaking before every sentence felt perfect."
+            tags={["argue", "listen", "revise"]}
             size="wide"
             recognition="ILMUN 2024 · Commendation · WEMUN 2023 and 2024 · Honorable Mention"
           />
 
           <MosaicEntry
-            label="ASB"
-            title="Before everyone arrives"
-            summary="As Vice President and then President, I learned to ask what people wanted to take on, adjust the plan when someone was overloaded, and leave room for a better idea than mine. The event still had to work; the team did too."
-            tags={["gather", "shape", "revise"]}
+            label="Debate"
+            title="Testing the other side"
+            summary="Debate taught me to take an argument apart, rebuild it, and then ask what I had missed. The useful part was often the question that made my first position less comfortable."
+            tags={["argue", "question", "listen"]}
             size="standard"
+          />
+
+          <MosaicEntry
+            label="Hosting"
+            title="Reading the room"
+            summary="At an opening ceremony, I introduced an extra teacher without a prepared slide. At a charity event, I slowed my cues while the team finished the props. Hosting is planned, but it never follows the script exactly."
+            tags={["listen", "gather", "revise"]}
+            size="standard"
+          />
+
+          <MosaicEntry
+            label="Mock trial"
+            title="Making the evidence matter"
+            summary="Mock trial gave me a different kind of speaking practice. I had to know the record, respond to the person in front of me, and explain why one detail changed the argument."
+            tags={["argue", "listen", "question"]}
+            size="wide"
           />
 
           <MosaicEntry
@@ -52,18 +68,9 @@ export default function IndexPage() {
           />
 
           <MosaicEntry
-            label="Energy audit"
-            title="Counting what everyone walks past"
-            summary="Our club checked twenty classrooms and two buildings, recording lights, air conditioning, idle equipment, and room dimensions. We used the findings to write an energy report with changes the school could actually try."
-            tags={["measure", "gather", "test"]}
-            size="wide"
-            recognition="Environmental club · Distinction · Top 30%"
-          />
-
-          <MosaicEntry
             label="Water quality"
-            title="Taking the kit outside"
-            summary="We started with test strips, then moved to equipment for ammonia, phosphorus, and dissolved oxygen. Later, we added drone surveys to see more of the river and look for possible sources of the water-quality problems."
+            title="A separate set of readings"
+            summary="Separate from E#, I used a dissolved-oxygen meter to take my own readings beside a canal. I recorded the instrument reading and the surrounding conditions as a small field record."
             tags={["measure", "test", "notice"]}
             size="wide"
           />
@@ -71,10 +78,19 @@ export default function IndexPage() {
           <MosaicEntry
             label="Environmental economics"
             title="Arguing with the discount rate"
-            summary="I wrote about discount rates for long-term environmental projects. Comparing Ramsey, Nordhaus, Stern, and Weitzman made me ask how much weight today’s decisions should give to people living far in the future."
+            summary="My paper began with a question I could not stop arguing with: how much should a decision today count the lives of people far in the future? Ramsey, Nordhaus, Stern, and Weitzman gave me four different ways to get stuck."
             tags={["question", "argue", "compare"]}
             size="standard"
             status="Working paper"
+          />
+
+          <MosaicEntry
+            label="Team business case"
+            title="Designing microplastic-free fish"
+            summary="Our team built a business idea around fish raised without microplastic contamination. My role was product design: deciding what we were offering, why someone would choose it, and how to explain the idea without making the environmental problem sound simple."
+            tags={["make", "question", "revise"]}
+            size="wide"
+            recognition="Honor in Team Business Case"
           />
 
           <MosaicEntry
@@ -88,7 +104,7 @@ export default function IndexPage() {
           <MosaicEntry
             label="Cameras"
             title="A camera I could afford to rebuild"
-            summary="I photographed school events, helped start the Portrait student blog, and built a camera around a Raspberry Pi. I liked that the cheap parts made the system understandable, repairable, and mine."
+            summary="I built a small camera around a Raspberry Pi because I wanted to understand the whole thing. The inexpensive parts made it possible to take apart, repair, and rebuild without being afraid of breaking it."
             tags={["frame", "make", "play"]}
             size="standard"
           />
@@ -112,7 +128,7 @@ export default function IndexPage() {
           <MosaicEntry
             label="Lucky desk crew"
             title="Rabbit, penguin, seal"
-            summary="Three stuffed animals travel between my desk and suitcase. I call them mascots; bringing them along makes difficult days feel a little more manageable. Photographs later."
+            summary="A rabbit, penguin, and seal move between my desk and suitcase. I call them my mascots. They do not solve difficult days, but having them nearby helps."
             tags={["notice", "play", "gather"]}
             size="standard"
           />
@@ -127,14 +143,14 @@ export default function IndexPage() {
         >
           <div>
             <p className="section-label">E# club / 2024–2026</p>
-            <h2 id="club-title">From test strips to a wider view.</h2>
+            <h2 id="club-title">One club, several ways to look.</h2>
             <p>
-              Two years of water testing, drone surveys, and a school energy
-              audit.
+              E# moved between water testing, drone surveys, classroom
+              discussions, and a school energy audit.
             </p>
             <PhotoSlider
-              label="Environmental club"
-              photos={galleries.water}
+              label="E# club"
+              photos={galleries.eclub}
               variant="window"
             />
           </div>
@@ -172,29 +188,32 @@ export default function IndexPage() {
           aria-labelledby="notes-title"
         >
           <div className="index-notes-heading">
-            <p className="section-label">Notes</p>
-            <h2 id="notes-title">Three things I keep coming back to.</h2>
+            <p className="section-label">Traditional art / making / music</p>
+            <h2 id="notes-title">Three slower ways of paying attention.</h2>
           </div>
           <div className="small-notes">
             <article>
               <p>01 / Paint</p>
               <h3>
-                Chinese landscapes and flower-and-bird painting have stayed with
-                me longer than most of my projects.
+                I learned Chinese landscapes and flower-and-bird painting before
+                I knew words like “design process.” I still like how a few
+                brushstrokes can hold a whole scene together.
               </h3>
             </article>
             <article>
               <p>02 / Make</p>
               <h3>
-                I started with paper planes and folding. Eventually, I wanted to
-                see whether a kirigami structure could move on its own.
+                I started by folding paper planes and trying to make them fly
+                farther. Kirigami came later, when I began asking whether the
+                folds could become part of a machine.
               </h3>
             </article>
             <article>
               <p>03 / Listen</p>
               <h3>
-                Playing the erhu keeps my attention on tiny changes in pressure,
-                pitch, and the quality of a single sustained note.
+                The erhu sounds unforgiving when my pressure is slightly wrong.
+                It makes me slow down and listen to one note instead of rushing
+                toward the next one.
               </h3>
             </article>
           </div>
@@ -207,19 +226,22 @@ export default function IndexPage() {
         >
           <p className="section-label">About this index</p>
           <div>
-            <h2 id="about-title">The projects are not the whole story.</h2>
+            <h2 id="about-title">This is what my weeks actually look like.</h2>
             <p>
-              I wanted to keep some of the ordinary parts here too: the team
-              before an event, a camera in the auditorium, dinner at home.
-              They’re part of how I spend my time.
+              I move between field equipment, event plans, arguments, bike
+              rides, dinner, and unfinished ideas. They overlap more than a neat
+              activities list suggests, so this index keeps them together.
             </p>
           </div>
         </section>
 
         <footer className="site-footer index-footer">
           <p>Ray Sha</p>
-          <p>The three connected academic projects have their own page.</p>
-          <a href="/work">Return to academic work</a>
+          <p>
+            The kirigami robot, pesticide fieldwork, and sensor array connect on
+            the Work page.
+          </p>
+          <a href="/work">See the three connected projects</a>
         </footer>
       </main>
     </div>
