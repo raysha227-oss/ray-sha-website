@@ -88,24 +88,27 @@ export default function PesticidePage() {
           </ol>
         </section>
 
-        <section
-          className="research-gallery"
-          aria-label="Field sampling photographs"
-        >
-          <EditorialFigure
-            src="/media/field-monitor.jpg"
-            alt="Ray standing beside an air-sampling monitor at the edge of a rice field"
-            width={1800}
-            height={1350}
-            caption="Checking the field monitor beside the treated plots."
+        <section className="work-collection-entry field-sequence">
+          <PhotoSlider
+            label="One fieldwork sequence"
+            photos={galleries.fieldwork}
+            variant="window"
           />
-          <EditorialFigure
-            src="/media/sample-vials.jpg"
-            alt="Ray arranging labeled red-capped sample vials beside a rice field"
-            width={1800}
-            height={1350}
-            caption="Organizing labeled vials before the next sampling round."
-          />
+          <div>
+            <p className="section-label">A sampling round</p>
+            <h2>The labels mattered as much as the instruments.</h2>
+            <p>
+              I checked the monitor position, prepared labeled vials, and moved
+              between the marked plots as samples were collected. The routine
+              repeated for a reason: every vial had to stay connected to a time,
+              location, and surface.
+            </p>
+            <p>
+              I also examined the drone&apos;s fertilizer spray bay to
+              understand the application hardware. It was useful context, but it
+              was not the sampler used for our measurements.
+            </p>
+          </div>
         </section>
 
         <section
@@ -128,8 +131,9 @@ export default function PesticidePage() {
               it. It’s ongoing work; the laboratory measurements remain the
               reference.
             </p>
-            <a className="text-link" href="/work/sensor-array">
-              Open the sensor-array build
+            <a className="project-cta" href="/work/sensor-array">
+              <span>Next project / 03</span>
+              <strong>Continue to the mobile sensor-array build →</strong>
             </a>
           </div>
         </section>
