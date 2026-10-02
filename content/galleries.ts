@@ -300,13 +300,6 @@ export const galleries = {
       height: 1350,
       caption: "The canal that made me stop and test.",
     },
-    {
-      src: "/media/water-independent-field.jpg",
-      alt: "Ray and a friend with water-testing equipment during a trip.",
-      width: 1800,
-      height: 1350,
-      caption: "With the equipment after taking readings.",
-    },
   ],
   eclub: [
     {
@@ -362,10 +355,10 @@ export const galleries = {
     },
     {
       src: "/media/field-sampler.jpg",
-      alt: "A field sampling instrument beneath a protective cover",
+      alt: "The fertilizer spray bay on an agricultural drone",
       width: 1200,
       height: 1600,
-      caption: "A closer look at the sampler.",
+      caption: "The drone spray bay used for fertilizer.",
     },
     {
       src: "/media/field-path.jpg",
@@ -657,7 +650,6 @@ export const galleryBySource: Record<string, keyof typeof galleries> = {
   "/media/water-independent-meter.jpg": "water",
   "/media/water-independent-sampling.jpg": "water",
   "/media/water-independent-river.jpg": "water",
-  "/media/water-independent-field.jpg": "water",
   "/media/eclub-research-presentation.jpg": "eclub",
   "/media/eclub-team-meeting.jpg": "eclub",
   "/media/eclub-field-setup.jpg": "eclub",
