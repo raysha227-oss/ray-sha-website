@@ -5,6 +5,9 @@ import { ActivityRecord } from "@/components/editorial/activity-record";
 import { PhotoSlider } from "@/components/editorial/photo-slider";
 import { galleries } from "@/content/galleries";
 
+// Avoid Vercel's static segment output path mismatch for the /index route.
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Index",
   description:
